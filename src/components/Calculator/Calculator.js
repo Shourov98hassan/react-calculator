@@ -11,6 +11,10 @@ const Calculator = () => {
   const clear=()=>{
     setResult("")
 }
+
+const backspace=()=>{
+  setResult("")
+}
   return (
     <div>
       <div className="container">
@@ -19,7 +23,7 @@ const Calculator = () => {
         </form>
         <div className="keypad">
           <button  onClick={clear} id="clear">Clear</button>
-          <button onClick={handleClick}>C</button>
+          <button onClick={backspace} id="backspace">C</button>
           <button name="/" onClick={handleClick}>&divide;</button>
           <button name="7" onClick={handleClick}>7</button>
           <button name="8" onClick={handleClick}>8</button>
