@@ -7,6 +7,10 @@ const Calculator = () => {
   const handleClick=(e)=>{
         setResult(e.target.name)
   }
+
+  const clear=()=>{
+    setResult("")
+}
   return (
     <div>
       <div className="container">
@@ -14,7 +18,7 @@ const Calculator = () => {
           <input type="text" value={result} />
         </form>
         <div className="keypad">
-          <button  onClick={handleClick}>Clear</button>
+          <button  onClick={clear} id="clear">Clear</button>
           <button onClick={handleClick}>C</button>
           <button name="/" onClick={handleClick}>&divide;</button>
           <button name="7" onClick={handleClick}>7</button>
