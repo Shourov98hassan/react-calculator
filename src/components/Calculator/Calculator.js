@@ -5,7 +5,7 @@ const Calculator = () => {
   const [result,setResult] = useState("")
 
   const handleClick=(e)=>{
-        setResult(e.target.name)
+        setResult(result.concat(e.target.name))
   }
 
   const clear=()=>{
@@ -40,6 +40,7 @@ const backspace=()=>{
           <button name="0" onClick={handleClick}>0</button>
           <button name="." onClick={handleClick}>.</button>
           <button  onClick={handleClick}>=</button>
+          <button  onClick={handleClick}>Delete</button>
         </div>
       </div>
     </div>
