@@ -1,36 +1,15 @@
 *{
-    font-family: "Roboto","sans-serif";
-    font-size: 18px;
+    margin: 0;
+    padding: 0;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .container{
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    margin: 0 auto;
-    width: 256px;
+    height: 400px;
+    width: 400px;
+    background-color: #bdc7b1;
     text-align: center;
-    border: 10px solid #101116;
-    background: #101116;
-    border-radius: 5px;
-}
-
-.keypad{
-    display: flex;
-    grid-template-columns: repeat(4,1fr);
-    grid-auto-rows: minmax(60px,auto);
-}
-
-input{
-    height: 75px;
-    width: 249px;
-    background-color: black;
-    color: white;
+    left: 30%;
+    position: absolute;
 }
