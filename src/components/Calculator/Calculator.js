@@ -40,7 +40,7 @@ const backspace=()=>{
           <button name="0" onClick={handleClick}>0</button>
           <button name="." onClick={handleClick}>.</button>
           <button  onClick={handleClick}>=</button>
-          <button  onClick={handleClick}>Delete</button>
+       
         </div>
       </div>
     </div>
